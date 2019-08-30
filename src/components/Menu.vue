@@ -35,7 +35,7 @@
 
 
             <!-- SHOPPING BASKET -->
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6 basket-div">
                 <div v-if="basket.length > 0">
                     <table class="table">
                             <thead class="thead">
@@ -60,11 +60,26 @@
                             </tbody>
                         </table>
 
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Naručitelj:</span>
+                            </div>
+                            <input v-model="clientName" name="clientName" id="client" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                         <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Adresa:</span>
+                            </div>
+                            <input v-model="address" type="text" name="address" id="address" class="form-control" aria-describedby="basic-addon1">
+                        </div>
+
                         <p>Total: {{ total }} kn</p>
                         <button class="btn btn-success btn-block" @click="addNewOrder">Naruči!</button>
                 </div>
+
                 <div v-else>
-                    <p>{{ basketText }}</p>
+                    <p class="basket-text">{{ basketText }}</p>
                 </div>
             </div>
         </div>
@@ -120,9 +135,9 @@ export default {
             this.basket.splice(this.basket.indexOf(item), 1);
         },
         addNewOrder(){
-            dbOrdersRef.push(this.basket)
-            this.basket = []
-            this.basketText = "Hvala Vam, Vaša narudžba je zaprimljena!"
+            dbOrdersRef.push(this.basket);
+            this.basket = [];
+            this.basketText = "Hvala Vam, Vaša narudžba je zaprimljena!";
         }
     }
 }
@@ -130,10 +145,6 @@ export default {
 
 
 <style  scoped>
-.menu-div {
-    margin-top: 1em;
-}
-
 .item-description {
     font-style: italic;
 }
@@ -154,4 +165,32 @@ export default {
 .btn-sm:hover{
      background-color: #FA9608;
 }
+
+th {
+    font-size: 14px;
+}
+
+tr {
+    font-size: 12px;
+}
+
+.basket-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.table {
+    border: 0px;
+}
+
+#basic-addon1 {
+    background: rgb(76, 73, 73);
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-control {
+    font-size: 14px;
+}
+
 </style>

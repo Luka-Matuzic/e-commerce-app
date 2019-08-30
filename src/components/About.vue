@@ -21,7 +21,9 @@
 
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        <router-view></router-view>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quaerat eveniet quis eius voluptates amet optio minus nulla mollitia, 
+            dolorem alias ad vitae nam placeat quod dignissimos cumque quibusdam ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis corrupti, necessitatibus temporibus eum excepturi incidunt a aut voluptate dolorem rem in, deleniti ipsum amet ea sequi cumque autem dignissimos.</p>
                     </div>
                 </div>
             </div>
@@ -31,14 +33,16 @@
                 <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button">
-                            <router-link :to="{name: 'orderingGuideLink'}"><a class="nav-item nav-link">Naručivanje</a></router-link>
+                            <router-link :to="{name: 'deliveryLink'}"><a class="nav-item nav-link">Naručivanje</a></router-link>
                         </button>
                     </h2>
                 </div>
 
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        <router-view></router-view>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quaerat eveniet quis eius voluptates amet optio minus nulla mollitia, 
+            dolorem alias ad vitae nam placeat quod dignissimos cumque quibusdam ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis corrupti, necessitatibus temporibus eum excepturi incidunt a aut voluptate dolorem rem in, deleniti ipsum amet ea sequi cumque autem dignissimos.</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +59,9 @@
 
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        <router-view></router-view>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quaerat eveniet quis eius voluptates amet optio minus nulla mollitia, 
+            dolorem alias ad vitae nam placeat quod dignissimos cumque quibusdam ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis corrupti, necessitatibus temporibus eum excepturi incidunt a aut voluptate dolorem rem in, deleniti ipsum amet ea sequi cumque autem dignissimos.</p>
                     </div>
                 </div>
             </div> 
@@ -93,18 +99,21 @@
 
 div#headingOne.card-header:hover, div#headingThree.card-header:hover {
     cursor: pointer;
-    background-color: #419b76;
+    background: rgb(255,157,18);
+    background: linear-gradient(90deg, rgba(255,157,18,1) 0%, rgba(65,155,118,1) 100%);
 }
 
 div#headingTwo.card-header:hover {
     cursor: pointer;
-    background-color: #FA9608;
+    background: rgb(255,157,18);
+    background: linear-gradient(90deg, rgba(255,157,18,1) 0%, rgba(65,155,118,1) 100%);
 }
 
 a.nav-item.nav-link {
     color: black;
     text-decoration: none;
 }
+
 
 a:hover {
     color: black;

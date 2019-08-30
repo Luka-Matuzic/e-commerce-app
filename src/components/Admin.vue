@@ -6,8 +6,8 @@
                     <NewProduct />
                 </div>
 
-                <div class="col-sm-12 col-md-6">
-                    <h3 class="menu">Menu</h3>
+                <div class="col-sm-12 col-md-6 admin-menu">
+                    <h5 class="menu">Menu</h5>
                     <table class="table">
                         <thead>
                             <tr> 
@@ -28,7 +28,7 @@
 
             <div class="row">
                 <div class="col-12">
-                    <h3 class="orders-title">Narudžbe: {{ numberOfOrders }}</h3>
+                    <h5 class="orders-title">Narudžbe: {{ numberOfOrders }}</h5>
                     <table class="table table-sm" v-for="(orders, index) in getOrders" :key="orders['.key']"> <!-- for petlja za loop kroz tablicu -->
                         <thead>
                              <div class="order-number">
@@ -116,5 +116,9 @@ export default {
 
     .orders-title {
         padding-bottom: 1em;
+    }
+
+    .admin-menu {
+        padding: 1em 0;
     }
 </style>

@@ -16,9 +16,6 @@
 </template>
 
 <style scoped>
-template {
-    background: #231E1E;
-}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -49,6 +46,9 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   padding: 20px;
+  margin: 0 auto;
   margin-top: 50px;
 }
+
+
 </style>

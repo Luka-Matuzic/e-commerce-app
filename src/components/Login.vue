@@ -4,7 +4,7 @@
             <div class="col">
                 <div>
                     <p v-if="!currentUser">Molimo prijavite se za nastavak u administracijsku sekciju.</p>
-                    <p class="logged-in" v-else>Logged in as: <br> {{ currentUser }}</p>
+                    <p class="logged-in" v-else>Ulogirani ste kao <strong>{{ currentUser }}</strong> </p>
                 </div>
 
                 <form>
@@ -81,5 +81,9 @@ export default {
 
     .btn-primary {
         margin-right: 1em;
-    }    
+    }  
+
+    .container {
+        padding: 5em 0;
+    }  
 </style>

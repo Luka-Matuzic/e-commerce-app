@@ -1,7 +1,7 @@
 <template>
     <div class="new-product">
         <form>
-            <h3 >Dodaj novi proizvod: </h3>
+            <h5>Dodaj novi proizvod: </h5>
             <hr class="new-product-underline">
 
             <div class="form-group row">
@@ -95,5 +95,9 @@ export default {
 
 .new-product-underline {
     padding-bottom: 1em;
+}
+
+button {
+    margin: 1em 1em;
 }
 </style>

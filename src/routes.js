@@ -12,11 +12,11 @@ export const routes = [
     { path: '/menu', name: 'menuLink', component: Menu },
     { path: '/admin', name: 'adminLink', component: Admin, 
       beforeEnter: (to, from, next) => {
-        alert ('This area is for authorized users only, please login to continue.');
+        alert ('Ovo je područje samo za ovlaštene korisnike. Prijavite se kako biste nastavili.');
         next();
       } 
     },  
-    {path:'/contact', name: 'contactLink', component: Contact },
+    { path:'/contact', name: 'contactLink', component: Contact },
     { path: '/about', name: 'aboutLink', component: About, 
       children: [ // nested routes (children)
         { path:'/history', name: 'historyLink', component: History },

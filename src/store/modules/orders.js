@@ -15,7 +15,6 @@ const mutations = {
     
 const actions = {
     setOrdersRef: firebaseAction(({ bindFirebaseRef}, { ref }) => {
-        // this will unbind any previously bound ref to 'todos'
         bindFirebaseRef('orders', ref)
     })
 }
